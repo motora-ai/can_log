@@ -14,8 +14,14 @@ substituindo os seguintes trechos:
 
 ## OBSERVAÇÕES
 
-Caso o USB morra por causa do adaptador e script, utilize o comando abaixo:
+1. Para descobrir qual a porta USB utilizada, utilize o comando abaixo:
 
 ```bash
-./reset_usb_controller.sh
+sudo dmesg
+```
+
+2. Caso o USB morra por causa do adaptador e script, utilize o comando abaixo:
+
+```bash
+sudo ./reset_usb_controller.sh
 ```
